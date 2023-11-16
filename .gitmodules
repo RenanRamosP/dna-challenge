@@ -2,3 +2,6 @@
 	path = front
 	url = https://github.com/RenanRamosP/front-dna
 	branch = main
+[submodule "back"]
+	path = back
+	url = https://github.com/RenanRamosP/back-dna
