@@ -1,5 +1,8 @@
 # DNA Analyze
 
+This Repo uses submodules clone it with the `--recurse-submodules` flag.
+`git clone  --recurse-submodules  https://github.com/RenanRamosP/dna-challenge`
+
 Steps to run this project:
 
 1. Fetch both the frontend and backend submodules:
