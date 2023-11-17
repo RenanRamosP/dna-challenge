@@ -1,6 +1,5 @@
-version: '3'
+version: "3"
 services:
-
   postgres:
     image: "postgres:14.5"
     ports:
@@ -10,3 +9,24 @@ services:
       POSTGRES_PASSWORD: "postgres"
       POSTGRES_DB: "postgres"
 
+  # backend:
+  #   build:
+  #     context: ./back
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "${PORT:-3001}:3001" # Use the PORT variable from the .env file, default to 3001
+  #   env_file:
+  #     - ./back/.env # Specify the path to your Express app's .env file
+  #   depends_on:
+  #     - postgres # Ensure that the backend service starts after the PostgreSQL service
+
+  # frontend:
+  #   build:
+  #     context: ./front
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "${API_PORT:-3000}:3000" # Use the API_PORT variable from the .env.local file, default to 3000
+  #   env_file:
+  #     - ./front/.env.local # Specify the path to your Next.js app's .env.local file
+  #   depends_on:
+  #     - backend # Ensure that the frontend service starts after the backend service
